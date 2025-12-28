@@ -11,6 +11,7 @@ https://quickstarts.sigmacomputing.com/guide/tables_fan_traps/index.html#2, show
   <li>I created the LEFT OUTER JOIN in Power Query using Merge Queries as new and called the resulting table, "Step 3 1st Join" when I expanded the join, I took all the columns including the duplicates as in the tutorial - this creates a denormalized table. </li>
   <li>I removed any automatic relationships that PBI set up with the new merged table and the existing tables. </li>
   <li>I once again chose Power Query Merge Queries as new for the second join which pulled in order_details to the new table so as to not corrupt prior data. </li>
+  This join required joining order_details to the order_header using the orderid for those tables. Intrestingly, this triggered a Privacy Level warning in PBI.  I checked ignore. 
 </ol>
 
 
