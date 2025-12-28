@@ -6,6 +6,7 @@ I used Power BI instead of Sigma and did not use Snowflake.   <br>
 ### Step 3 of the tutorial notes
 https://quickstarts.sigmacomputing.com/guide/tables_fan_traps/index.html#2, shows the relationships between the .csv tables.  <br>
 <ol>
+  <li>The events.csv was missing event name and attendance. I manually created the columns as conditional columns using the event id in Power Query.</li>
   <li>Power BI accurately connected the tables, but did not set up the relationship between events and order_header as one to many.  I manually updated it.</li>
   <li>I removed any autosumming that PBI set up.</li>
   <li>I created the LEFT OUTER JOIN in Power Query using Merge Queries as new and called the resulting table, "Step 3 1st Join" when I expanded the join, I took all the columns including the duplicates as in the tutorial - this creates a denormalized table. </li>
