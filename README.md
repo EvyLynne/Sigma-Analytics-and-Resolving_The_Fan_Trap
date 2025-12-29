@@ -16,6 +16,7 @@ https://quickstarts.sigmacomputing.com/guide/tables_fan_traps/index.html#2, show
   <li>Once again, I removed automatic relationships and autosum.  I named this table, "Step 3 2nd Join"</li>
   <li>I also hid order_header.event_id column and order_details.order_id column from final report.</li>
   <li>When I duplicated step #4, I found that the price column was missing.  I added a conditional column based on product and made up a value for cracker jacks.</li>
+  <li>When I Tried to duplicate the fan out issue, I found that the amount included in the order_header table .</li>
 </ol>
 
 
